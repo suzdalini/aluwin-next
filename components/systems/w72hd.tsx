@@ -199,6 +199,7 @@ const W72HD = () => {
                                     alt={item.title}
                                     width={176}
                                     height={176}
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                 />
 
                                 <div className="my-auto">

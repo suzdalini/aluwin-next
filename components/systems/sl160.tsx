@@ -125,7 +125,7 @@ const SL160 = () => {
                     <div className="text-sm">
                         <Brochure 
                             pdfUrl="https://img.alu-win.ru/brochures/sl160.pdf"
-                            imageUrl="https://img.alu-win.ru/brochures/sl160.jpg"
+                            imageUrl="https://img.alu-win.ru/brochures/sl160.webp"
                             title="Брошюра Alutech ALT SL 160"
                             size="3.1 Мб"
                         />
@@ -143,6 +143,7 @@ const SL160 = () => {
                         alt="Alutech ALT SL 160"
                         width={800}
                         height={600}
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
 
                     <div>

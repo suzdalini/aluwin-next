@@ -38,6 +38,7 @@ const USKL60 = () => {
                     width={1600}
                     height={800}
                     className="rounded-xl mb-10 shadow-xl shadow-slate-300 w-full"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
 
                 <h2>Система элементных куполов Alutech ALT USKL60</h2>
@@ -84,6 +85,7 @@ const USKL60 = () => {
                     width={1600}
                     height={800}
                     className="rounded-xl mb-10 shadow-xl shadow-slate-300 w-full"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
             </section>
 
@@ -95,6 +97,7 @@ const USKL60 = () => {
                     width={1600}
                     height={800}
                     className="rounded-xl mb-10 shadow-xl shadow-slate-300 w-full"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
             </section>
 
@@ -111,6 +114,7 @@ const USKL60 = () => {
                                     alt={item.title}
                                     width={400}
                                     height={200}
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                 />
 
                                 <div className="my-auto">

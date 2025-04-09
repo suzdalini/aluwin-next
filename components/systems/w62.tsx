@@ -81,6 +81,7 @@ const W62: React.FC = () => {
                         alt="Alutech ALT W62"
                         width={800}
                         height={600}
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
 
                     <div>

@@ -167,6 +167,7 @@ const W77 = () => {
                         alt="Alutech ALT W77"
                         width={800}
                         height={600}
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
 
                     <div>
@@ -212,6 +213,7 @@ const W77 = () => {
                             alt="Alutech ALT W77"
                             width={800}
                             height={600}
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         />
                     </div>
                     <div className="md:w-[40%] h-full rounded-xl overflow-hidden">
@@ -221,6 +223,7 @@ const W77 = () => {
                             alt="Alutech ALT W77"
                             width={800}
                             height={600}
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         />
                     </div>
                 </div>
@@ -232,6 +235,7 @@ const W77 = () => {
                             alt="Alutech ALT W77"
                             width={800}
                             height={600}
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         />
                     </div>
                     <div className="md:w-[65%] h-full rounded-xl overflow-hidden">
@@ -241,6 +245,7 @@ const W77 = () => {
                             alt="Alutech ALT W77"
                             width={800}
                             height={600}
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         />
                     </div>
                 </div>

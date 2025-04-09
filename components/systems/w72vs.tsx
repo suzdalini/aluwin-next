@@ -23,6 +23,7 @@ const W72VS = () => {
                         width={1600}
                         height={800}
                         className="rounded-xl w-full mb-16 shadow-xl shadow-slate-300"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
 
 
@@ -226,6 +227,7 @@ const W72VS = () => {
                         width={1600}
                         height={800}
                         className="rounded-xl w-full shadow-xl shadow-slate-300"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
 
                     <div className="divider"></div>
@@ -273,6 +275,7 @@ const W72VS = () => {
                                 width={1600}
                                 height={800}
                                 className="rounded-xl w-full shadow-xl shadow-slate-300 hidden md:block"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             />
                             <Image
                                 src={`${process.env.NEXT_PUBLIC_IMG}systems/w72vs/9.3.webp`}
@@ -280,6 +283,7 @@ const W72VS = () => {
                                 width={1600}
                                 height={800}
                                 className="rounded-xl w-full shadow-xl shadow-slate-300 md:hidden"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             />
                         </div>
                     </div>
@@ -293,6 +297,7 @@ const W72VS = () => {
                         width={1600}
                         height={800}
                         className="rounded-xl w-full shadow-xl shadow-slate-300"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
 
                     <div className="divider"></div>
