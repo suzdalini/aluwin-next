@@ -125,7 +125,7 @@ const SL160 = () => {
                     <div className="text-sm">
                         <Brochure 
                             pdfUrl="https://img.alu-win.ru/brochures/sl160.pdf"
-                            imageUrl="https://img.alu-win.ru/brochures/sl160.jpg"
+                            imageUrl="https://img.alu-win.ru/brochures/sl160.webp"
                             title="Брошюра Alutech ALT SL 160"
                             size="3.1 Мб"
                         />
@@ -191,7 +191,7 @@ const SL160 = () => {
                 <div className="flex flex-col md:flex-row gap-5 h-[600px]">
                     <div className="md:w-[60%] h-full rounded-xl overflow-hidden">
                         <Image
-                            src={`${process.env.NEXT_PUBLIC_IMG}render/sl160/1.jpg`}
+                            src={`${process.env.NEXT_PUBLIC_IMG}render/sl160/1.webp`}
                             className="w-full h-full object-cover"
                             alt="Alutech ALT SL160"
                             width={800}
@@ -200,7 +200,7 @@ const SL160 = () => {
                     </div>
                     <div className="md:w-[40%] h-full rounded-xl overflow-hidden">
                         <Image
-                            src={`${process.env.NEXT_PUBLIC_IMG}render/sl160/2.jpg`}
+                            src={`${process.env.NEXT_PUBLIC_IMG}render/sl160/2.webp`}
                             className="w-full h-full object-cover"
                             alt="Alutech ALT SL160"
                             width={800}
@@ -211,7 +211,7 @@ const SL160 = () => {
                 <div className="flex flex-col md:flex-row gap-5 h-[600px]">
                     <div className="md:w-[50%] h-full rounded-xl overflow-hidden">
                         <Image
-                            src={`${process.env.NEXT_PUBLIC_IMG}render/sl160/3.jpg`}
+                            src={`${process.env.NEXT_PUBLIC_IMG}render/sl160/3.webp`}
                             className="w-full h-full object-cover"
                             alt="Alutech ALT SL160"
                             width={800}
@@ -220,7 +220,7 @@ const SL160 = () => {
                     </div>
                     <div className="md:w-[50%] h-full rounded-xl overflow-hidden">
                         <Image
-                            src={`${process.env.NEXT_PUBLIC_IMG}render/sl160/4.jpg`}
+                            src={`${process.env.NEXT_PUBLIC_IMG}render/sl160/4.webp`}
                             className="w-full h-full object-cover"
                             alt="Alutech ALT SL160"
                             width={800}
