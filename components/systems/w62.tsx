@@ -73,11 +73,13 @@ const W62: React.FC = () => {
                     <div className="max-w-[748px] mx-auto">
                         <Image
                             src="https://img.alu-win.ru/systems/W62.webp"
-                            className="w-full"
                             alt="Alutech ALT W62"
                             width={748}
                             height={748}
-                            sizes="(max-width: 768px) 100vw, 748px"
+                            placeholder="blur"
+                            blurDataURL="https://img.alu-win.ru/systems/W62.webp"
+                            sizes="(max-width: 767px) 100vw, (max-width: 1599px) 50vw, 800px"
+                            quality={80}
                         />
                     </div>
 
