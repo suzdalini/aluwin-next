@@ -1,10 +1,10 @@
-import { cookies } from 'next/headers';
+//import { cookies } from 'next/headers';
 import { Montserrat } from 'next/font/google';
 import '@/styles/globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Script from 'next/script';
-import { ABTestProvider } from '@/components/metrika/ABTestProvider';
+// import { ABTestProvider } from '@/components/metrika/ABTestProvider';
 import { YandexMetrika } from '@/components/metrika/YandexMetrika';
 import Image from 'next/image';
 
@@ -19,8 +19,9 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const cookieStore = await cookies();
-  const variant = cookieStore.get('ab_variant')?.value || 'A';
+  //const cookieStore = await cookies();
+  //const variant = cookieStore.get('ab_variant')?.value || 'A';
+  //const variant = 'A';
 
   return (
     <html lang="ru">
@@ -62,7 +63,7 @@ export default async function RootLayout({
         </noscript>
 
         {/* A/B-провайдер с вариантом из cookie */}
-        <ABTestProvider variant={variant}>
+        {/* <ABTestProvider variant={variant}> */}
           <YandexMetrika />
 
           <div className="sticky top-0 z-50 bg-white">
@@ -77,7 +78,7 @@ export default async function RootLayout({
             {children}
             <Footer />
           </div>
-        </ABTestProvider>
+        {/* </ABTestProvider> */}
       </body>
     </html>
   );

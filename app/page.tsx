@@ -6,7 +6,6 @@ import Contact from '@/components/Contact';
 import ImgHover from '@/components/Image/ImgHover';
 import HeaderLink from '@/components/HeaderLink';
 import Hero from '@/components/Hero';
-import { cookies } from 'next/headers';
 import Link from 'next/link';
 import About from '@/components/About';
 
@@ -17,9 +16,8 @@ export const metadata = {
 
 export default async function Home() {
 
-    const cookieStore = await cookies();
-    const variant = cookieStore.get('ab_variant')?.value || 'A';
-    const forcedIndex = variant === 'B' ? 1 : 0;
+
+    const forcedIndex = 0;
 
     const heroVariants = [
         {
