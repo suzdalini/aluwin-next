@@ -30,7 +30,7 @@ export const systems: System[] = [
         name: "Alutech ALT SL160",
         title: "Подъёмно-раздвижная система",
         img: "systems/SL160.webp",
-        url: "systems/sl160",
+        url: "/systems/sl160",
         text: "Подъёмно-раздвижная система",
     },
     {

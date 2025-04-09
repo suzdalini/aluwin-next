@@ -1,7 +1,12 @@
 // app/not-found.tsx
 import Link from 'next/link';
-
+import { Metadata } from 'next';
 export const dynamic = 'force-static';
+
+export const metadata: Metadata = {
+    title: 'Страница не найдена | Алювин',
+    description: 'Страница не найдена',
+};
 
 export default function NotFound() {
     return (
