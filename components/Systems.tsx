@@ -7,7 +7,11 @@ import { systems } from '@/data/systems';
 const Systems: React.FC = () => {
     return (
         <section className="">
-            <div className="flex flex-col gap-3 lg:gap-6 lg:flex-row">
+            <div className="
+                flex flex-col
+                md:grid md:grid-cols-3
+                gap-3 
+                lg:gap-6">
                 {systems.map((system) => (
                     <div key={system.id} id={system.id} className="card hover-sky p-3">
                         <Link href={system.url}>
