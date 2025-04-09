@@ -96,7 +96,7 @@ const W72: React.FC = () => {
             <section>
                 <div className="grid lg:grid-cols-2 gap-10">
                     <Image
-                        src="https://img.alu-win.ru/systems/W72.png"
+                        src="https://img.alu-win.ru/systems/W72.webp"
                         className="w-full"
                         alt="Alutech ALT W72"
                         width={800}
@@ -134,7 +134,7 @@ const W72: React.FC = () => {
                 <div className="flex flex-col md:flex-row gap-5 h-[500px]">
                     <div className="md:w-[60%] h-full rounded-xl overflow-hidden">
                         <Image 
-                            src={`${process.env.NEXT_PUBLIC_IMG}render/2.jpg`} 
+                            src={`${process.env.NEXT_PUBLIC_IMG}render/2.webp`} 
                             className="w-full h-full object-cover" 
                             alt="Alutech ALT W72" 
                             width={800}
@@ -143,7 +143,7 @@ const W72: React.FC = () => {
                     </div>
                     <div className="md:w-[40%] h-full rounded-xl overflow-hidden">
                         <Image 
-                            src={`${process.env.NEXT_PUBLIC_IMG}render/3.jpg`} 
+                            src={`${process.env.NEXT_PUBLIC_IMG}render/3.webp`} 
                             className="w-full h-full object-cover" 
                             alt="Alutech ALT W72" 
                             width={500}
@@ -154,7 +154,7 @@ const W72: React.FC = () => {
                 <div className="flex flex-col md:flex-row gap-5 h-[500px]">
                     <div className="md:w-[35%] h-full rounded-xl overflow-hidden">
                         <Image 
-                            src={`${process.env.NEXT_PUBLIC_IMG}render/4.jpg`} 
+                            src={`${process.env.NEXT_PUBLIC_IMG}render/4.webp`} 
                             className="w-full h-full object-cover" 
                             alt="Alutech ALT W72" 
                             width={400}
@@ -163,7 +163,7 @@ const W72: React.FC = () => {
                     </div>
                     <div className="md:w-[65%] h-full rounded-xl overflow-hidden">
                         <Image 
-                            src={`${process.env.NEXT_PUBLIC_IMG}render/1.jpg`} 
+                            src={`${process.env.NEXT_PUBLIC_IMG}render/1.webp`} 
                             className="w-full h-full object-cover" 
                             alt="Alutech ALT W72" 
                             width={800}

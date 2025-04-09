@@ -28,14 +28,14 @@ export default function ConstructorAlutech2() {
 
     // Предзагрузка изображений
     const preloadImages = [
-        'l.close.in.jpg',
-        'l.open.in.jpg',
-        'l.close.out.jpg',
-        'l.open.out.jpg',
-        'r.close.in.jpg',
-        'r.open.in.jpg',
-        'r.close.out.jpg',
-        'r.open.out.jpg',
+        'l.close.in.webp',
+        'l.open.in.webp',
+        'l.close.out.webp',
+        'l.open.out.webp',
+        'r.close.in.webp',
+        'r.open.in.webp',
+        'r.close.out.webp',
+        'r.open.out.webp',
     ];
 
     return (
@@ -43,7 +43,7 @@ export default function ConstructorAlutech2() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
                 <div>
                     <Image
-                        src={`${IMG}systems/w72hd/l.${position}.${type}.jpg`}
+                        src={`${IMG}systems/w72hd/l.${position}.${type}.webp`}
                         alt="Входные алюминиевые двери Alutech ALT W 72 HD"
                         width={750}
                         height={750}

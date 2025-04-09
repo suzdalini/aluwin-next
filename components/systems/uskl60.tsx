@@ -12,19 +12,19 @@ interface Module {
 const USKL60 = () => {
     const modules: Module[] = [
         {
-            src: "systems/uskl60/v1.jpg",
+            src: "systems/uskl60/v1.webp",
             title: "Квадрат",
         },
         {
-            src: "systems/uskl60/v2.jpg",
+            src: "systems/uskl60/v2.webp",
             title: "Треугольник",
         },
         {
-            src: "systems/uskl60/v3.jpg",
+            src: "systems/uskl60/v3.webp",
             title: "Ромб",
         },
         {
-            src: "systems/uskl60/v4.jpg",
+            src: "systems/uskl60/v4.webp",
             title: "Трапеция",
         },
     ]

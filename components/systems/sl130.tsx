@@ -294,7 +294,7 @@ const SL130: React.FC = () => {
             <section className="py-5 lg:py-10">
                 <h2 className="text-3xl mb-5 font-bold">Структура ALT SL130</h2>
                 <Image
-                    src={`${process.env.NEXT_PUBLIC_IMG}systems/sl130/2.jpg`}
+                    src={`${process.env.NEXT_PUBLIC_IMG}systems/sl130/2.webp`}
                     alt="Система подъемно-раздвижных и раздвижных конструкций ALT SL130"
                     width={1200}
                     height={800}
