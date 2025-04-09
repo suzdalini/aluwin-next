@@ -125,7 +125,7 @@ const SL160 = () => {
                     <div className="text-sm">
                         <Brochure 
                             pdfUrl="https://img.alu-win.ru/brochures/sl160.pdf"
-                            imageUrl="https://img.alu-win.ru/brochures/sl160.webp"
+                            imageUrl="https://img.alu-win.ru/brochures/sl160.jpg"
                             title="Брошюра Alutech ALT SL 160"
                             size="3.1 Мб"
                         />
