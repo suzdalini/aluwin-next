@@ -12,22 +12,20 @@ interface Spec {
 
 const W62: React.FC = () => {
     const specs: Spec[] = [
-        { value: "2500 мм", text: "Максимальная высота створки" },
-        { value: "1600 мм", text: "Монтажная ширина створки" },
-        { value: "150 кг", text: "Макс. вес заполнения" },
-        { value: "до 50 мм", text: "Толщина заполнения" },
-        { value: "Uf = 2,92 W/m2∙K", text: "Теплопроводность" },
+        { value: '2500 мм', text: 'Максимальная высота створки' },
+        { value: '1600 мм', text: 'Монтажная ширина створки' },
+        { value: '150 кг', text: 'Макс. вес заполнения' },
+        { value: 'до 50 мм', text: 'Толщина заполнения' },
+        { value: 'Uf = 2,92 W/m2∙K', text: 'Теплопроводность' },
         {
-            value: "R₀ = 0,67 м2∙°С/Вт",
-            text: "Приведенное сопр. теплопередаче (ГОСТ 26602.1)",
+            value: 'R₀ = 0,67 м2∙°С/Вт',
+            text: 'Приведенное сопр. теплопередаче (ГОСТ 26602.1)',
         },
     ];
 
     return (
         <div>
-            <section
-                className="bg-slate-300 rounded-xl bg-center bg-no-repeat bg-cover bg-[url('https://img.alu-win.ru/cover/w62.webp')] shadow-2xl shadow-slate-300"
-            >
+            <section className="bg-slate-300 rounded-xl bg-center bg-no-repeat bg-cover bg-[url('https://img.alu-win.ru/cover/w62.webp')] shadow-2xl shadow-slate-300">
                 <div className="h-[200px] lg:h-[700px]"></div>
             </section>
 
@@ -39,29 +37,26 @@ const W62: React.FC = () => {
                 <div className="grid lg:grid-cols-4 gap-10 bg-white p-10 rounded-2xl">
                     <div className="col-span-3">
                         <div className="mb-8 text-2xl">
-                            Система алюминиевых профилей ALTW62 предназначена для
-                            изготовления различных типов конструкций, к которым
-                            предъявляются повышенные требования по термо-изоляции и
-                            звукоизоляции. Из профилей систе- мы и комплектующих
-                            изделий с использованием различной фурнитуры возможно
+                            Система алюминиевых профилей ALTW62 предназначена для изготовления
+                            различных типов конструкций, к которым предъявляются повышенные
+                            требования по термо-изоляции и звукоизоляции. Из профилей систе- мы и
+                            комплектующих изделий с использованием различной фурнитуры возможно
                             изготовление следующих типов изделий.
                         </div>
 
                         <div className="text-black/75">
-                            Окна ALT W62 позволяют повысить функциональность и
-                            безопасность зданий, обеспечивают высокий уровень
-                            комфорта в помещениях. Конструкции на основании ALT W62
-                            надежны и долговечны, имеют высокие показатели тепло- и
-                            звукоизоляции, а также герметичности. Применяемые
-                            профили, комплектующие и фурнитура, используемые типы
-                            покрытий гарантируют долгий срок службы окон.
-                            Конструкции выглядят стильно, удачно гармонируют с
+                            Окна ALT W62 позволяют повысить функциональность и безопасность зданий,
+                            обеспечивают высокий уровень комфорта в помещениях. Конструкции на
+                            основании ALT W62 надежны и долговечны, имеют высокие показатели тепло-
+                            и звукоизоляции, а также герметичности. Применяемые профили,
+                            комплектующие и фурнитура, используемые типы покрытий гарантируют долгий
+                            срок службы окон. Конструкции выглядят стильно, удачно гармонируют с
                             фасадными и дверными системами.
                         </div>
                     </div>
 
                     <div className="text-sm">
-                        <Brochure 
+                        <Brochure
                             pdfUrl="https://img.alu-win.ru/brochures/w62.pdf"
                             imageUrl="https://img.alu-win.ru/brochures/w62.jpg"
                             title="Брошюра Alutech ALT W62"
@@ -75,25 +70,22 @@ const W62: React.FC = () => {
 
             <section>
                 <div className="grid lg:grid-cols-2 gap-10">
-                    <Image
-                        src="https://img.alu-win.ru/systems/W62.webp"
-                        className="w-full"
-                        alt="Alutech ALT W62"
-                        width={800}
-                        height={600}
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    />
+                    <div className="max-w-[748px] mx-auto">
+                        <Image
+                            src="https://img.alu-win.ru/systems/W62.webp"
+                            className="w-full"
+                            alt="Alutech ALT W62"
+                            width={748}
+                            height={748}
+                            sizes="(max-width: 768px) 100vw, 748px"
+                        />
+                    </div>
 
                     <div>
-                        <h2 className="text-3xl mb-5 font-bold">
-                            Основные параметры ALT W62
-                        </h2>
+                        <h2 className="text-3xl mb-5 font-bold">Основные параметры ALT W62</h2>
                         <div className="grid gap-3">
                             {specs.map((spec) => (
-                                <div
-                                    key={spec.text}
-                                    className="p-5 rounded-2xl bg-slate-500/10"
-                                >
+                                <div key={spec.text} className="p-5 rounded-2xl bg-slate-500/10">
                                     <h3 className="text-2xl mb-1 tracking-tight font-light">
                                         {spec.value}
                                     </h3>
@@ -111,19 +103,19 @@ const W62: React.FC = () => {
             <section className="flex flex-col gap-5">
                 <div className="flex flex-col md:flex-row gap-5 h-[600px]">
                     <div className="md:w-[60%] h-full rounded-xl overflow-hidden">
-                        <Image 
-                            src={`${process.env.NEXT_PUBLIC_IMG}render/6.webp`} 
-                            className="w-full h-full object-cover" 
-                            alt="Alutech ALT W62" 
+                        <Image
+                            src={`${process.env.NEXT_PUBLIC_IMG}render/6.webp`}
+                            className="w-full h-full object-cover"
+                            alt="Alutech ALT W62"
                             width={800}
                             height={600}
                         />
                     </div>
                     <div className="md:w-[40%] h-full rounded-xl overflow-hidden">
-                        <Image 
-                            src={`${process.env.NEXT_PUBLIC_IMG}render/7.webp`} 
-                            className="w-full h-full object-cover" 
-                            alt="Alutech ALT W62" 
+                        <Image
+                            src={`${process.env.NEXT_PUBLIC_IMG}render/7.webp`}
+                            className="w-full h-full object-cover"
+                            alt="Alutech ALT W62"
                             width={500}
                             height={600}
                         />
@@ -131,19 +123,19 @@ const W62: React.FC = () => {
                 </div>
                 <div className="flex flex-col md:flex-row gap-5 h-[600px]">
                     <div className="md:w-[50%] h-full rounded-xl overflow-hidden">
-                        <Image 
-                            src={`${process.env.NEXT_PUBLIC_IMG}render/8.webp`} 
-                            className="w-full h-full object-cover" 
-                            alt="Alutech ALT W62" 
+                        <Image
+                            src={`${process.env.NEXT_PUBLIC_IMG}render/8.webp`}
+                            className="w-full h-full object-cover"
+                            alt="Alutech ALT W62"
                             width={600}
                             height={600}
                         />
                     </div>
                     <div className="md:w-[50%] h-full rounded-xl overflow-hidden">
-                        <Image 
-                            src={`${process.env.NEXT_PUBLIC_IMG}render/5.webp`} 
-                            className="w-full h-full object-cover" 
-                            alt="Alutech ALT W62" 
+                        <Image
+                            src={`${process.env.NEXT_PUBLIC_IMG}render/5.webp`}
+                            className="w-full h-full object-cover"
+                            alt="Alutech ALT W62"
                             width={600}
                             height={600}
                         />
@@ -169,9 +161,8 @@ const W62: React.FC = () => {
                                     className="min-w-5 mt-[4px] text-sky-600"
                                 />
                                 <p>
-                                    Одностворчатые окна с различным типом
-                                    открывания: поворотные, поворотно-откидные,
-                                    верхне- подвесные внутреннего открывания,
+                                    Одностворчатые окна с различным типом открывания: поворотные,
+                                    поворотно-откидные, верхне- подвесные внутреннего открывания,
                                     нижнеподвесные внутреннего открывания
                                 </p>
                             </div>
@@ -180,9 +171,7 @@ const W62: React.FC = () => {
                                     icon="bi:check-circle"
                                     className="min-w-5 mt-[4px] text-sky-600"
                                 />
-                                <p>
-                                    Двустворчатые штульповые, внутреннего открывания
-                                </p>
+                                <p>Двустворчатые штульповые, внутреннего открывания</p>
                             </div>
                             <div className="flex gap-2">
                                 <Icon
@@ -217,8 +206,8 @@ const W62: React.FC = () => {
                                     className="min-w-5 mt-[4px] text-sky-600"
                                 />
                                 <p>
-                                    C теплым порогом, с холодным порогом, с
-                                    автоматическим опускающимся порогом
+                                    C теплым порогом, с холодным порогом, с автоматическим
+                                    опускающимся порогом
                                 </p>
                             </div>
                             <div className="flex gap-2">
@@ -226,20 +215,14 @@ const W62: React.FC = () => {
                                     icon="bi:check-circle"
                                     className="min-w-5 mt-[4px] text-sky-600"
                                 />
-                                <p>
-                                    C цокольным профилем и створочным профилем по
-                                    всему контуру
-                                </p>
+                                <p>C цокольным профилем и створочным профилем по всему контуру</p>
                             </div>
                             <div className="flex gap-2">
                                 <Icon
                                     icon="bi:check-circle"
                                     className="min-w-5 mt-[4px] text-sky-600"
                                 />
-                                <p>
-                                    C верхними и боковыми глухими частями в одной
-                                    раме
-                                </p>
+                                <p>C верхними и боковыми глухими частями в одной раме</p>
                             </div>
                         </div>
                     </div>
@@ -269,4 +252,4 @@ const W62: React.FC = () => {
     );
 };
 
-export default W62; 
+export default W62;
