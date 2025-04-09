@@ -1,10 +1,9 @@
 'use client';
 import React, { useState, useMemo, useContext } from 'react';
 import { useRouter } from 'next/navigation';
-import { Icon } from '@iconify/react';
 import Accept from './Accept';
 import { ABTestContext } from '@/components/metrika/ABTestProvider';
-
+import { ImSpinner2 } from 'react-icons/im';
 interface FormProps {
     className?: string;
     accept?: {
@@ -55,6 +54,7 @@ const NamePhone: React.FC<NamePhoneProps> = ({ goal, className, form, btn, input
     const router = useRouter();
     const [lead, setLead] = useState<Lead>({ name: '', phone: '' });
     const [isSent, setIsSent] = useState<boolean>(false);
+    const [isSending, setIsSending] = useState<boolean>(false);
     const [inputFocused, setInputFocused] = useState(false);
     const [inputChanged, setInputChanged] = useState(false);
     const { variant } = useContext(ABTestContext);
@@ -134,6 +134,7 @@ const NamePhone: React.FC<NamePhoneProps> = ({ goal, className, form, btn, input
 
     // Отправка формы с вызовом целей Метрики
     const sendForm = async () => {
+        setIsSending(true);
         const utm = getUtmData();
 
 
@@ -177,6 +178,8 @@ const NamePhone: React.FC<NamePhoneProps> = ({ goal, className, form, btn, input
             router.push('/thanks');
         } catch (error) {
             console.error(error);
+        } finally {
+            setIsSending(false);
         }
     };
 
@@ -216,7 +219,7 @@ const NamePhone: React.FC<NamePhoneProps> = ({ goal, className, form, btn, input
                 </div>
 
                 <button
-                    className={`w-full cursor-pointer ${btn.className} ${
+                    className={`w-full cursor-pointer flex justify-center items-center ${btn.className} ${
                         isDisabled ? 'opacity-50' : ''
                     }`}
                     onClick={() => {
@@ -231,10 +234,10 @@ const NamePhone: React.FC<NamePhoneProps> = ({ goal, className, form, btn, input
                     }}
                     disabled={isDisabled}
                 >
-                    {!isSent ? (
-                        btn.text
+                    {!isSending ? (
+                        isSent ? '...' : btn.text
                     ) : (
-                        <Icon icon="svg-spinners:ring-resize" className="w-5 h-5 text-white" />
+                        <ImSpinner2 className="w-5 h-5 text-white animate-spin" />
                     )}
                 </button>
             </div>
