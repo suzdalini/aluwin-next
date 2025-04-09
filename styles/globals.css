@@ -1,0 +1,95 @@
+@import 'tailwindcss';
+
+:root {
+    --background: #ffffff;
+    --foreground: #171717;
+}
+
+@theme inline {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
+}
+
+body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-montserrat);
+    @apply bg-slate-100;
+}
+
+h1 {
+    @apply text-pretty tracking-tight text-3xl md:text-4xl lg:text-[2.6rem] font-bold leading-[120%];
+}
+
+h2 {
+    @apply text-pretty tracking-tighter text-2xl md:text-3xl lg:text-4xl font-bold;
+}
+
+h3 {
+    @apply text-pretty tracking-tight text-xl md:text-xl lg:text-2xl font-bold;
+}
+
+p {
+    @apply text-pretty tracking-tight;
+}
+
+a {
+    @apply text-pretty tracking-tight;
+}
+
+.card {
+    @apply bg-white rounded-2xl transition-all duration-300;
+}
+
+.hover-sky {
+    @apply hover:scale-[1.01] transition-all duration-300 hover:bg-sky-100;
+}
+
+section {
+    @apply flex flex-col gap-8;
+}
+
+/* Убираем тень и добавляем скругление картинке в лайтбоксе */
+.ril-image-current {
+    box-shadow: none !important;
+    border-radius: 1rem !important; /* соответствует rounded-xl */
+    max-height: 90vh; /* чтобы скругление не обрезалось */
+    object-fit: contain;
+}
+
+/* Скрываем полосу прокрутки для всех браузеров */
+.hide-scroll::-webkit-scrollbar {
+    display: none; /* Для Chrome, Safari и Opera */
+}
+
+.hide-scroll {
+    -ms-overflow-style: none; /* Для Internet Explorer и Edge */
+    scrollbar-width: none; /* Для Firefox */
+}
+
+.divider {
+    @apply h-10 xl:h-20;
+}
+
+.btn-primary {
+    @apply transition-all duration-300
+    bg-gradient-to-r from-cyan-500 to-sky-500 hover:bg-gradient-to-r 
+    hover:from-cyan-600 hover:to-sky-600 disabled:hover:bg-gradient-to-r 
+    disabled:hover:from-cyan-600 disabled:hover:to-sky-600 disabled:cursor-not-allowed;
+}
+
+.btn-secondary {
+    @apply transition-all duration-300
+    bg-gradient-to-r from-slate-200 to-slate-100 hover:bg-gradient-to-r 
+    hover:from-slate-300 hover:to-slate-200 disabled:hover:bg-gradient-to-r 
+    disabled:hover:from-slate-300 disabled:hover:to-slate-200 disabled:cursor-not-allowed;
+}
