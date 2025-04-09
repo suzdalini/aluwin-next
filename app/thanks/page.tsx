@@ -1,12 +1,21 @@
-import React from 'react';
+// app/thanks.tsx
+import Link from 'next/link';
+import { Metadata } from 'next';
+export const dynamic = 'force-static';
+
+export const metadata: Metadata = {
+    title: 'Спасибо за заявку! | Алювин',
+    description: 'Спасибо за заявку!',
+};
 
 export default function ThanksPage() {
     return (
-        <div className="container mx-auto px-4 py-8">
-            <h1 className="text-3xl font-bold mb-6">Спасибо за обращение!</h1>
-            <p className="text-lg">
-                Мы получили ваше сообщение и свяжемся с вами в ближайшее время.
-            </p>
+        <div className="text-center py-20 flex flex-col gap-5">
+            <h1>Спасибо за заявку!</h1>
+            <p className="text-lg">Наш менеджер перезвонит Вам в течение 15 минут</p>
+            <Link href="/" className="px-6 py-3 btn-primary rounded-xl text-white w-fit mx-auto">
+                Вернуться на главную
+            </Link>
         </div>
     );
 }

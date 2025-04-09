@@ -113,60 +113,43 @@ const NamePhone: React.FC<NamePhoneProps> = ({ goal, className, form, btn, input
         }
     };
 
+
+
+    function getUtmData() {
+        if (typeof window === 'undefined') return {};
+    
+        try {
+            const raw = localStorage.getItem('utm');
+            if (!raw) return {};
+    
+            return JSON.parse(raw);
+        } catch (e) {
+            console.warn('Ошибка при чтении UTM:', e);
+            return {};
+        }
+    }
+
+
+
+
     // Отправка формы с вызовом целей Метрики
     const sendForm = async () => {
-        const utm_source =
-            typeof localStorage !== 'undefined' && localStorage.getItem('utm_source')
-                ? JSON.parse(localStorage.getItem('utm_source')!)
-                : '';
-        const utm_medium =
-            typeof localStorage !== 'undefined' && localStorage.getItem('utm_medium')
-                ? JSON.parse(localStorage.getItem('utm_medium')!)
-                : '';
-        const utm_campaign =
-            typeof localStorage !== 'undefined' && localStorage.getItem('utm_campaign')
-                ? JSON.parse(localStorage.getItem('utm_campaign')!)
-                : '';
-        const utm_content =
-            typeof localStorage !== 'undefined' && localStorage.getItem('utm_content')
-                ? JSON.parse(localStorage.getItem('utm_content')!)
-                : '';
-        const utm_term =
-            typeof localStorage !== 'undefined' && localStorage.getItem('utm_term')
-                ? JSON.parse(localStorage.getItem('utm_term')!)
-                : '';
-        const ysclid =
-            typeof localStorage !== 'undefined' && localStorage.getItem('ysclid')
-                ? JSON.parse(localStorage.getItem('ysclid')!)
-                : '';
-        const yclid =
-            typeof localStorage !== 'undefined' && localStorage.getItem('yclid')
-                ? JSON.parse(localStorage.getItem('yclid')!)
-                : '';
-        const gclid =
-            typeof localStorage !== 'undefined' && localStorage.getItem('gclid')
-                ? JSON.parse(localStorage.getItem('gclid')!)
-                : '';
+        const utm = getUtmData();
 
-        const API = process.env.NEXT_PUBLIC_API;
+
+        const API = process.env.NEXT_PUBLIC_PROGRESS_API;
         const body = {
             brand: {
-                id: 3,
+                id: 1,
                 name: 'Алювин',
             },
             name: lead.name,
             phone: clearPhone(lead.phone),
             form: btn.text,
-            utm: {
-                utm_source,
-                utm_medium,
-                utm_campaign,
-                utm_content,
-                utm_term,
-            },
-            ysclid,
-            yclid,
-            gclid,
+            utm: utm,
+            ysclid: utm.ysclid,
+            yclid: utm.yclid,
+            gclid: utm.gclid,
         };
 
         try {
