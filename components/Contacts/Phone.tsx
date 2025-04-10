@@ -44,7 +44,7 @@ const Phone: React.FC<PhoneProps> = ({
     };
 
     return (
-        <a href={`tel:${cleanPhone}`} className={linkClassName} onClick={handleClick}>
+        <a href={`tel:+${cleanPhone}`} className={linkClassName} onClick={handleClick}>
             {!textOnly && <Icon icon="mdi:phone" className={iconClassName} />}
             {!iconOnly && (
                 <span
