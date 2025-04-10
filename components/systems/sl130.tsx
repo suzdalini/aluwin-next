@@ -91,7 +91,10 @@ const SL130: React.FC = () => {
                     width={1200}
                     height={600}
                     className="rounded-xl mb-10 shadow-xl shadow-slate-300 w-full"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    placeholder="blur"
+                    blurDataURL="https://img.alu-win.ru/systems/uskl60/3.webp"
+                    sizes="(max-width: 0px) 0px, 700px"
+                    quality={80}
                 />
 
                 <h1 className="font-bold mb-5 text-3xl">

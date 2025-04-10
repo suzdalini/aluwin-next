@@ -1,33 +1,33 @@
-'use client'
+'use client';
 
-import React from 'react'
-import Image from 'next/image'
+import React from 'react';
+import Image from 'next/image';
 
 interface Module {
-    src: string
-    title: string
-    text?: string
+    src: string;
+    title: string;
+    text?: string;
 }
 
 const USKL60 = () => {
     const modules: Module[] = [
         {
-            src: "systems/uskl60/v1.webp",
-            title: "Квадрат",
+            src: 'systems/uskl60/v1.webp',
+            title: 'Квадрат',
         },
         {
-            src: "systems/uskl60/v2.webp",
-            title: "Треугольник",
+            src: 'systems/uskl60/v2.webp',
+            title: 'Треугольник',
         },
         {
-            src: "systems/uskl60/v3.webp",
-            title: "Ромб",
+            src: 'systems/uskl60/v3.webp',
+            title: 'Ромб',
         },
         {
-            src: "systems/uskl60/v4.webp",
-            title: "Трапеция",
+            src: 'systems/uskl60/v4.webp',
+            title: 'Трапеция',
         },
-    ]
+    ];
 
     return (
         <div>
@@ -38,7 +38,10 @@ const USKL60 = () => {
                     width={1600}
                     height={800}
                     className="rounded-xl mb-10 shadow-xl shadow-slate-300 w-full"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    placeholder="blur"
+                    blurDataURL="https://img.alu-win.ru/systems/uskl60/3.webp"
+                    sizes="(max-width: 0px) 0px, 700px"
+                    quality={80}
                 />
 
                 <h2>Система элементных куполов Alutech ALT USKL60</h2>
@@ -47,32 +50,30 @@ const USKL60 = () => {
                     <div>
                         <p className="mb-3">
                             Алюминиевая светопрозрачная система USKL60 предназначена для
-                            использования при остеклении разнообразных зданий и сооружений,
-                            включая купольно-крышные конструкции. Она состоит из объемных
-                            геометрических структур, собранных из определенного количества
-                            готовых остекленных блоков различных форм. Варианты исполнения
-                            позволяют создавать остекленные блоки, которые при взгляде в
-                            перпендикулярной плоскости принимают форму треугольника,
-                            прямоугольника, квадрата, трапеции, ромба и других геометрических
-                            фигур.
+                            использования при остеклении разнообразных зданий и сооружений, включая
+                            купольно-крышные конструкции. Она состоит из объемных геометрических
+                            структур, собранных из определенного количества готовых остекленных
+                            блоков различных форм. Варианты исполнения позволяют создавать
+                            остекленные блоки, которые при взгляде в перпендикулярной плоскости
+                            принимают форму треугольника, прямоугольника, квадрата, трапеции, ромба
+                            и других геометрических фигур.
                         </p>
 
                         <p className="mb-3">
-                            Остекленные блоки могут быть дополнены внутренними переплетами,
-                            также известными как импосты, которые позволяют разделить
-                            светопрозрачный блок на более мелкие геометрические формы. Это
-                            позволяет создавать индивидуальные и уникальные конструкции,
-                            сочетающие в себе эстетику и функциональность.
+                            Остекленные блоки могут быть дополнены внутренними переплетами, также
+                            известными как импосты, которые позволяют разделить светопрозрачный блок
+                            на более мелкие геометрические формы. Это позволяет создавать
+                            индивидуальные и уникальные конструкции, сочетающие в себе эстетику и
+                            функциональность.
                         </p>
                     </div>
 
                     <p className="mb-3">
-                        Конструкция USKL60 предназначена для монтажа на несущий каркас,
-                        обеспечивая прочность и стабильность системы. Она идеально подходит
-                        для различных типов зданий и сооружений, обеспечивая высокую
-                        прозрачность и эстетически приятный вид. Благодаря своей гибкости и
-                        разнообразию форм, она может адаптироваться к различным архитектурным
-                        задачам и требованиям.
+                        Конструкция USKL60 предназначена для монтажа на несущий каркас, обеспечивая
+                        прочность и стабильность системы. Она идеально подходит для различных типов
+                        зданий и сооружений, обеспечивая высокую прозрачность и эстетически приятный
+                        вид. Благодаря своей гибкости и разнообразию форм, она может адаптироваться
+                        к различным архитектурным задачам и требованиям.
                     </p>
                 </div>
             </section>
@@ -85,7 +86,10 @@ const USKL60 = () => {
                     width={1600}
                     height={800}
                     className="rounded-xl mb-10 shadow-xl shadow-slate-300 w-full"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    placeholder="blur"
+                    blurDataURL="https://img.alu-win.ru/systems/uskl60/3.webp"
+                    sizes="(max-width: 0px) 0px, 700px"
+                    quality={80}
                 />
             </section>
 
@@ -97,7 +101,10 @@ const USKL60 = () => {
                     width={1600}
                     height={800}
                     className="rounded-xl mb-10 shadow-xl shadow-slate-300 w-full"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    placeholder="blur"
+                    blurDataURL="https://img.alu-win.ru/systems/uskl60/3.webp"
+                    sizes="(max-width: 0px) 0px, 700px"
+                    quality={80}
                 />
             </section>
 
@@ -114,7 +121,10 @@ const USKL60 = () => {
                                     alt={item.title}
                                     width={400}
                                     height={200}
-                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                    placeholder="blur"
+                                    blurDataURL="https://img.alu-win.ru/systems/uskl60/3.webp"
+                                    sizes="(max-width: 0px) 0px, 200px"
+                                    quality={80}
                                 />
 
                                 <div className="my-auto">
@@ -127,7 +137,7 @@ const USKL60 = () => {
                 </div>
             </section>
         </div>
-    )
-}
+    );
+};
 
-export default USKL60 
+export default USKL60;

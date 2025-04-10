@@ -78,7 +78,7 @@ const W62: React.FC = () => {
                             height={748}
                             placeholder="blur"
                             blurDataURL="https://img.alu-win.ru/systems/W62.webp"
-                            sizes="(max-width: 767px) 100vw, (max-width: 1599px) 50vw, 800px"
+                            sizes="(max-width: 0px) 350px, 350px"
                             quality={80}
                         />
                     </div>
